@@ -1,0 +1,26 @@
+<html>
+
+<head>
+  <title>Hands-on Express XSS</title>
+</head>
+
+<body>
+
+<h1>hello world</h1></br>
+
+<form action="/">
+  <p>What is your name ?</p>
+  <input type="text" name="name" value="world">
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+  if(window.location.hash) {
+    // Insert a message defined from URL fragment (http://localhost:3000/#thanks)
+    var message = window.location.hash.substring(1);
+    document.write(decodeURIComponent(message));
+  }
+</script>
+
+</body>
+</html>
