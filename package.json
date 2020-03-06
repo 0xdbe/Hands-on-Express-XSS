@@ -1,13 +1,17 @@
 {
-  "name": "hands-on_express_xss",
+  "name": "hands-on-express-xss",
   "version": "1.0.0",
-  "description": "",
+  "description": "This application is a demonstration prototype just to show how to perform XSS attacks.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "0xdbe",
+  "license": "MIT License",
+  "bugs": {
+    "url": "https://github.com/0xdbe/Hands-on-Express-XSS/issues"
+  },
+  "homepage": "https://github.com/0xdbe/Hands-on-Express-XSS#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-session": "^1.17.0"
