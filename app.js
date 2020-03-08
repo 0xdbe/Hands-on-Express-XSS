@@ -1,3 +1,6 @@
+
+const PORT = process.env.PORT || 3000;
+
 const express = require('express');
 const session = require('express-session');
 const fs = require('fs');
@@ -40,4 +43,4 @@ app.get('/', (req, res) => {
 });
 
 // Start Application
-app.listen(3000, '0.0.0.0', () => console.log('app listening on 3000'));
+app.listen(PORT, '0.0.0.0', () => console.log('app listening on 3000'));

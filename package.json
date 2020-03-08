@@ -4,10 +4,11 @@
   "description": "This application is a demonstration prototype just to show how to perform XSS attacks.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "0xdbe",
-  "license": "MIT License",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/0xdbe/Hands-on-Express-XSS/issues"
   },
