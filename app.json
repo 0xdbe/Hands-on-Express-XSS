@@ -3,9 +3,6 @@
   "description": "This application is a demonstration prototype just to show how to perform XSS attacks.",
   "repository": "https://github.com/0xdbe/Hands-on-Express-XSS",
   "keywords": ["node", "express", "xss"],
-  "buildpacks": [
-    { "url": "heroku/nodejs" },
-  ]
 } 
 
 
