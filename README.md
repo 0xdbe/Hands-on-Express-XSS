@@ -7,6 +7,7 @@ This application is a demonstration prototype just to show how to perform XSS at
 ### Deploy on heroku
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/0xdbe/Hands-on-Express-XSS)
 
 ### Deploy on your host
 
